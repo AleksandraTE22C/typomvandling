@@ -12,10 +12,17 @@ public class Lek4_uppg2 {
         int o_index = text.indexOf("o");
         System.out.println("Bokstaven 'o' ligger på plats "+o_index);
 
-        String del_sträng = text.substring(0, 5);
-        System.out.println("Text mellan index 0 och index 5 är "+del_sträng);
+        String del_sträng = text.substring(0, 4);
+        System.out.println("Text mellan index 0 och index 4 är "+del_sträng);
 
         boolean svar= text.contains("hej");
         System.out.println("Texten innehåller ordet hej = "+ svar);
+
+        String del2_sträng = text.substring(4, antal_bokstäver);
+        System.out.println("Skriv en ny text:");
+        String text_ny = tb.nextLine();
+        String byt_text = text.replace(del2_sträng, text_ny);
+        System.out.println(byt_text);
+
     }
 }
